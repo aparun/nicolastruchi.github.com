@@ -1,16 +1,25 @@
 <!DOCTYPE>
 <html>
-    <head>
-        <script src="http://demo.criteo.com/h.duthil/custom/publishertag.js"></script>
-        <style>
-            div{
-                width:300px;
-                height:250px;
-            }
-        </style>
-    </head>
-    <body>
-        <!--<p>Sync - direct integration</p>
+
+<head>
+    <script src="http://demo.criteo.com/h.duthil/custom/publishertag.js"></script>
+    <style>
+        div.example {
+            width: 300px;
+            height: 250px;
+        }
+        
+        div.container {
+            display: inline-block;
+            margin-right:100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="directIntegration" class="container">
+        <h2>Direct integration</h2>
+        <h3>Sync mode</h3>
         <script type="text/javascript">
             Criteo.DisplayAd({
                 zoneid: 313137,
@@ -18,20 +27,24 @@
             })
         </script>
 
-        <p>Async - direct integration</p>
-        <div id="ad0"></div>
+        <h3>Async mode</h3>
+        <div id="ad0" class="example"></div>
         <script type="text/javascript">
             Criteo.DisplayAd({
                 zoneid: 313137,
                 containerid: "ad0"
             })
-        </script>-->
+        </script>
+    </div>
 
-        <p>Sync - friendly iframe integration</p>
-        <iframe src="globalAtfr-sync-iframe.html" width="300px" height="250px"></iframe>
+    <div id="iframeIntegration" class="container">
+        <h2>Friendly iframe integration</h2>
+        <h3>Sync mode</h3>
+        <iframe src="globalAtfr-sync-iframe.html" width="300px" height="250px" frameBorder=0 vspace=0 scrolling="no" marginwith=0 marginheight=0 hspace=0 allowtransparency=true></iframe>
 
-        <p>Async - friendly iframe integration</p>
-        <iframe src="globalAtfr-async-iframe.html" width="300px" height="250px"></iframe>
-        
-    </body>
+        <h3>Async mode</h3>
+        <iframe src="globalAtfr-async-iframe.html" width="300px" height="250px" frameBorder=0 vspace=0 scrolling="no" marginwith=0 marginheight=0 hspace=0 allowtransparency=true></iframe>
+    </div>
+</body>
+
 </html>
