@@ -1,0 +1,36 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <script src="http://demo.criteo.com/h.duthil/custom/publishertag.js"></script>
+        <style>
+            div{
+                width:250px;
+                height:350px;
+                border: black thin solid;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Sync - direct integration</p>
+        <div id="ad0"></div>
+        <script type="text/javascript">
+            Criteo.DisplayAd({
+                zoneid: 313137,
+                containerid: "ad0"
+            })
+        </script>
+
+        <p>Async - direct integration</p>
+        <div id="ad0"></div>
+        <script type="text/javascript">
+            Criteo.DisplayAd({
+                zoneid: 313137,
+                containerid: "ad0"
+            })
+        </script>
+
+        <p>Sync - friendly iframe integration</p>
+
+        <p>Async - friendly iframe integration</p>
+    </body>
+</html>
